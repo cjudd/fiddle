@@ -1,0 +1,24 @@
+Fiddle is a Servlet used for executing scripts using the Java Scripting API for the purpose of debugging and fiddling around with web and Java EE based applications with in the context of an application server. In addition, the Fiddle project includes a repository of reusable scripts for getting started with fiddling around.
+NOTE: If you have ever heard <a href="http://www.nealford.com/">Neal Ford</a> speak about the Chris Judd Debugging Servlet during <a href="http://www.nofluffjuststuff.com/">No Fluff Just Stuff</a>, this is the new version built on the Java 6 Scripting API.
+
+Background
+
+Have you ever deployed an application which required XML parsing and were surprised to get an incompatible class exception because your application loaded some XML parsing classes in your application class loader but others from the application server class loader? Have you ever had to validate an application server configuration such as connections to database, access through firewalls or JMS queues before you were allowed to deploy your application? Have you ever needed to know what was in the HTTP Session during the execution of your application?
+
+These an many other basic debugging requirements were the motivation to creating Fiddle. While all of these problems could be handled by writing a few lines of Java code, it requires the long development cycle including compiling, packaging and deploying a web application. The great thing about using scripting and Fiddle is ability to execute and get debugging feedback quickly and flexibly, making you more productive.
+
+Goals
+
+Single jar file for easy embedding into existing web applications.
+No external dependencies from the single jar file; no images, no jar files.
+Only dependency is Java Scripting API.
+Fiddle should be application server independent however scripts maybe application server specific.
+Project Components
+
+Fiddle - Embeddible Servlet for executing scripts.
+Fiddler - Simple web application already configured with Fiddle.
+Fiddle-scripts - Repository of commonly used scripts.
+Fiddle-example - Example project showing how to embed Fiddle into existing applications.
+Releases
+
+Currently stable release is 0.3.
