@@ -38,9 +38,6 @@ public class FiddleServlet extends HttpServlet {
   
   private static final long serialVersionUID = 1L;
 
-  /**
-   * still more comments
-   */
   private static final String BINDING_ENGINES = "engines";
 
   /**
