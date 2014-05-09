@@ -35,9 +35,7 @@ import javax.servlet.http.HttpServletResponse;
  * @since 1.0
  */
 public class FiddleServlet extends HttpServlet {
-	/**
-	 * more comments
-	 */
+  
   private static final long serialVersionUID = 1L;
 
   /**
